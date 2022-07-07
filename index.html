@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+	<h1>Django</h1>
+	<img src="télécharger.jfif">
+
+<h2><div>Definition et contexte</div></h2>
+
+<p>Django est un framework open source de premier plan utilisé la plupart du temps avec le langage de programmation Python. Il a vu le jour en 2003 par Lawrence Journal-World et a été publié sous licence en juillet 2005. Après Django Software fondation a été créé pour s'occuper du développement et de la promotion du logiciel.</p>
+
+<p>Instagram, Pinterest et Coursera sont des sites célèbres qui s'utilisent ce framework pour leur programmation. </p>
+
+<p>Il est l'un des framework back-end les plus simple à exploiter. Car, elle convient au développement de site Web riche et sophistiqué en fonctionnalités basée sur des bases de données.</p>
+
+<h3>1. L'utilité de ce framework</h3>
+
+<p>Django est un framework Python fiable et complet que les développeurs et les entreprises peuvent utiliser pour leurs projets. Il faut noter que Django fait l’objet de corrections de bugs chaque mois et d’une mise à jour majeure tous les 8 mois.Il a plusieurs fonctionnalités avantageux pour les développeurs qui le distingue des autres framework fullstack.</p>
+
+<p>En effet, il facilite une connexion optimale, un codage réduit, une plus grande réutilisation et un développement plus rapide. Il utilise Python pour toutes les opérations dans Django et fournit une interface d'administration facultative pour aider à créer, lire, mettre à jour et supprimer des opérations. Django est aussi utilisé par de nombreux sites Web renommés tels que Disqus, Mozilla et The Washington Times.</p>
+
+<p>Django est un framework sécurisé qui aide ses utilisateurs à prévenir plusieurs problèmes de sécurité.
+Il peut être utilisé pour développer plusieurs types d'applications.</p>
+
+<h3>3. Avantages</h3> 
+
+<div>Idéal pour un projet collaboratif</div>
+<p>Un nouveau développeur qui intègre un projet Django est opérationnel immédiatement. D'une part par l'installation et la configuration de son environnement de développement mais également par le fait que tous les projets Django ont la même structure, celui-ci ne perdra jamais de temps à trouver une fonction ou comprendre un mécanisme de programmation.</p>
+
+<div>Compatible avec quelques technologies </div>
+<p>Vous aimez travailler avec Grunt, Coffeescript, Sass / Compass, AngularJS ? Aucun souci, c'est compatible ! Et c'est même conseillé de travailler avec !</p>
+
+
+<h3>4. Comment créer un fichier Django ? </h3>
+<p>Mapper URL est généralement stocké dans un fichier nommé urls.py. Dans l'exemple ci-dessous, le mapper (urlpatterns) définit une liste de mappings entre des routes (des patterns d'URL spécifiques) et leur fonction de vue correspondante. Si une requête HTTP est reçue dont l'URL correspond à un pattern spécifié, la fonction vue associée sera alors appelée et passée dans la requête.</p>
+
+<span><p>urlpatterns = [ path('admin/', admin.site.urls), path('book/<int:id>/', views.book-detail, name='book-detail'), path('catalog/', include('catalog.urls')),</p></span>
+<span><p>re_path(r'^([0-9]+)/$', views.best), ] Copy to Clipboard</p></span>
+
+<p>L'objet urlpatterns est une liste de fonctions path() et/ou re_path()(les listes en Python sont définies en utilisant des crochets), où des éléments sont séparés par des virgules et peuvent avoir une virgule de traîne optionnelle. Par exemple : [item1, item2, item3,]).</p>
+
+<p>Le premier argument de chaque méthode est une route (pattern) qui sera reconnu. La méthode path() utilise des chevrons pour définir les parties de l'URL qui seront capturées et passées dans les fonctions vues comme arguments nommés. La fonction re_path() utilise une approche de correspondance de pattern flexible, connue sous le nom d'expression régulière. Nous parlerons de ces dernières dans un prochain article !</p>
+
+<p>Le second argument est une autre fonction qui sera appelée quand le pattern sera reconnu. La notation views.book-detail indique que la fonction s'appelle book-detail() , et qu'elle se trouve dans un module appelé views (i.e. dans un fichier intitulé views.py)</p>
+
+
+</body>
+</html>
